@@ -29,3 +29,20 @@ pyautogui.write("vitordavidps@gmail.com")
 pyautogui.press("tab") # passando o próximo campo
 pyautogui.write("sua senha")
 pyautogui.click(x=679, y=468) # clique no botão de login
+time.sleep(3)
+
+# Passo 3: Importar a base de produtos pra cadastrar
+tabela = pd.read_csv("produtos.csv")
+print(tabela)
+
+# Passo 4: Cadastrar um produto
+linha = 0
+# clicar no campo de código
+pyautogui.click(x=728, y=249)
+# pegar da tabela o valor do campo que a gente quer preencher
+codigo = "MOLO000251"
+# preencher o campo
+
+# Passo 5: Repetir o processo de cadastro até o fim
+
+
